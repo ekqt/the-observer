@@ -1,0 +1,42 @@
+.logo {
+    width: 30rem;
+}
+
+.section {
+    h1 {
+        font-size: 3rem;
+        margin-block: 0;
+    }
+    & h2,
+    h3,
+    h4 {
+        margin-block: 1.5rem 0;
+    }
+    & strong {
+        font-weight: 600;
+    }
+    & p {
+        margin-block: 1rem;
+        line-height: 2;
+        font-size: var(--tx-size-body);
+    }
+    & figure {
+        margin-block: 0.5rem 1rem;
+    }
+    & li {
+        margin-block: 0.25rem;
+        line-height: 2;
+        font-size: var(--tx-size-body);
+    }
+    & a {
+        font-weight: 500;
+        text-decoration: underline;
+        text-decoration-color: #4dabf7;
+        text-underline-offset: 0.2rem;
+        text-decoration-thickness: 2px;
+        transition: text-decoration-color 0.15s ease-in-out;
+        &:hover {
+            text-decoration-color: #228be6;
+        }
+    }
+}

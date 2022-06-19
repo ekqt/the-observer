@@ -28,7 +28,7 @@ observer.observe(target);
 
 ### Intersection observer options
 
-The `options` object passed into the `IntersectionObserver()` constructor lets you control the configuration under which the observer's callback is ran. It has the following fields:
+The `options` object passed into the `IntersectionObserver()` constructor lets you control the configuration under which the observer's callback is run. It has the following fields:
 
 -   `root` is the element that is used as the viewport for checking visibility of the target.
 -   `rootMargin` is the margin around the root. This set of values serves to grow or shrink each side of the root element's bounding box before computing intersections.

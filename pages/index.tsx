@@ -26,7 +26,7 @@ const Home: NextPage<PageProps> = ({ content }) => {
             <section className={styles.section}>
                 <Marked markdown={content["targeting-element"]} />
             </section>
-            <GitHubCorner href='hectorsosa.me' />;
+            <GitHubCorner href='https://github.com/ekqt/the-observer' />;
         </>
     );
 };

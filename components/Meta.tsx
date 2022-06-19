@@ -28,7 +28,7 @@ const Meta = ({ title, keywords, description, url, image }: MetaProps) => {
             <meta property='og:type' content='website' />
             <meta
                 property='og:url'
-                content={`https://the-observer.vercel.app${url}`}
+                content={`https://observe.vercel.app${url}`}
             />
             <meta property='og:title' content={title} />
             <meta property='og:description' content={description} />
@@ -38,7 +38,7 @@ const Meta = ({ title, keywords, description, url, image }: MetaProps) => {
             <meta property='twitter:card' content='summary_large_image' />
             <meta
                 property='twitter:url'
-                content={`https://the-observer.vercel.app${url}`}
+                content={`https://observe.vercel.app${url}`}
             />
             <meta property='twitter:title' content={title} />
             <meta property='twitter:description' content={description} />

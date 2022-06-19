@@ -13,7 +13,7 @@ const useStyles = createStyles((theme) => ({
         padding: 60,
 
         "@media (max-width: 755px)": {
-            padding: 50
+            padding: 50,
         },
     },
 
@@ -65,7 +65,12 @@ const HeroText = () => {
         <Container className={classes.wrapper} size={1400}>
             <Title className={classes.title}>
                 The{" "}
-                <Text component='span' variant="gradient" gradient={{ from: 'cyan', to: 'indigo' }} inherit>
+                <Text
+                    component='span'
+                    variant='gradient'
+                    gradient={{ from: "cyan", to: "indigo" }}
+                    inherit
+                >
                     Observer
                 </Text>{" "}
                 is now available for any stack
@@ -73,7 +78,7 @@ const HeroText = () => {
 
             <Container p={0} size={600}>
                 <Text size='lg' color='dimmed' className={classes.description}>
-                    Monitor free of hassle your web content for all your Users.
+                    Monitor your web content for all your Users free of hassle.
                 </Text>
             </Container>
 

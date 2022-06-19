@@ -81,7 +81,7 @@ const generateBlocks = (block: any) => {
             );
         case "codespan":
             return (
-                <Code key={uuidv4()}>
+                <Code key={uuidv4()} color="blue">
                     {text
                         .replaceAll("&#39;", "'")
                         .replaceAll("&lt;", "<")

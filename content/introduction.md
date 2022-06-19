@@ -1,4 +1,4 @@
-The **Intersection Observer API** provides a way to asynchronously observe changes in the intersection of a target element with an ancestor element or with the document's [viewport](https://developer.mozilla.org/en-US/docs/Glossary/Viewport). As the web has matured, Intersection information is needed for many reasons.
+The [Intersection Observer API](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API) provides a way to asynchronously observe changes in the intersection of a target element with an ancestor element or with the document's [viewport](https://developer.mozilla.org/en-US/docs/Glossary/Viewport). As the web has matured, Intersection information is needed for many reasons.
 
 You can use this for:
 
@@ -23,7 +23,6 @@ const callback = (entries) => {
 const options = { threshold: 1 };
 
 const observer = new IntersectionObserver(callback, options);
-
 observer.observe(target);
 ```
 

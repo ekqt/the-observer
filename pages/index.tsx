@@ -35,9 +35,7 @@ const Home: NextPage<PageProps> = ({ content }) => {
     useEffect(() => {
         const observerCallback = (entries: any) => {
             entries.map((i: any) => {
-                if (i.target === campaignRef.current) {
-                    setVisible(i.isIntersecting);
-                }
+                i.isIntersecting ? setVisible(true) : setVisible(false);
             });
         };
 
@@ -66,6 +64,9 @@ const Home: NextPage<PageProps> = ({ content }) => {
             </section>
             <section className={styles.section}>
                 <Marked markdown={content["targeting-element"]} />
+            </section>
+            <section className={styles.section}>
+                <Marked markdown={content["demo-explanation"]} />
             </section>
             <GitHubCorner href='https://github.com/ekqt/the-observer' />
         </>

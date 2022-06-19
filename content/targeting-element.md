@@ -18,6 +18,8 @@ const callback = (entries) => {
 The code snippet below shows a callback which keeps counter of how many times elements intersected the root by at least 75%. For a threshold value of 0.0 (default) the callback is called upon transition of the value of `isIntersecting`. The snippet thus first checks that the transition is a positive one, then determines whether `intersectionRatio` is above 75%, in which case it increments the counter.
 
 ```javascript
+let counter = 0;
+
 const callback = (entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {

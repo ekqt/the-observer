@@ -9,18 +9,17 @@ import {
 
 const useStyles = createStyles((theme) => ({
     wrapper: {
-        // border: "1px solid hotpink",
         position: "relative",
-        paddingBlock: 30,
-        paddingInline: 0,
+        padding: 60,
 
         "@media (max-width: 755px)": {
-            paddingBlock: 40,
+            padding: 50
         },
     },
 
     title: {
         textAlign: "center",
+        lineHeight: 1,
         fontSize: 40,
 
         "@media (max-width: 520px)": {

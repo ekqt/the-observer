@@ -1,7 +1,8 @@
 import "../styles/globals.scss";
 import { AppProps } from "next/app";
 import { MantineProvider } from "@mantine/core";
-import Meta from "../components/Meta"
+import Meta from "../components/Meta";
+import { NotificationsProvider } from "@mantine/notifications";
 
 export default function App(props: AppProps) {
     const { Component, pageProps } = props;
@@ -10,9 +11,11 @@ export default function App(props: AppProps) {
         <>
             <Meta />
             <MantineProvider withGlobalStyles withNormalizeCSS>
-                <main id='main'>
-                    <Component {...pageProps} />
-                </main>
+                <NotificationsProvider>
+                    <main id='main'>
+                        <Component {...pageProps} />
+                    </main>
+                </NotificationsProvider>
             </MantineProvider>
         </>
     );

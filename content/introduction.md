@@ -1,5 +1,7 @@
 The [Intersection Observer API](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API) provides a way to asynchronously observe changes in the intersection of a target element with an ancestor element or with the document's [viewport](https://developer.mozilla.org/en-US/docs/Glossary/Viewport). As the web has matured, Intersection information is needed for many reasons.
 
+> Trust is good, but observation is better.
+
 You can use this for:
 
 -   Lazy-loading of images or other content as a page is scrolled. Would also be useful for implementing "infinite scrolling" on web sites, where more and more content is loaded and rendered as you scroll, so that the user doesn't have to flip through pages.

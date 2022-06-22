@@ -2,6 +2,8 @@
 
 The [Intersection Observer API](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API) provides a way to asynchronously observe changes in the intersection of a target element with an ancestor element or with the document's [viewport](https://developer.mozilla.org/en-US/docs/Glossary/Viewport). As the web has matured, Intersection information is needed for many reasons.
 
+> Trust is good, but observation is better.
+
 You can use this for:
 
 -   Lazy-loading of images or other content as a page is scrolled. Would also be useful for implementing "infinite scrolling" on web sites, where more and more content is loaded and rendered as you scroll, so that the user doesn't have to flip through pages.
@@ -101,15 +103,20 @@ observer.observe(campaignRef.current);
 
 Every framework has its own state management solution, in this case we are storing the state of the element observed in React's `useState` to render the DOM conditionally on its state and that is literally it.
 
-## Conclusion
+## Examples
 
 Here are a couple of additional examples to take a look at:
 
 -   [Intersection Observer Playground](https://wilsotobianco.com/experiments/intersection-observer-playground/#end)
 -   [Scroll spy Navigation](https://codepen.io/wilsotobianco/pen/dyVZbYz)
+-   [Infinite scroll](https://web.dev/patterns/web-vitals-patterns/infinite-scroll/infinite-scroll/)
 -   [Timing element visibility](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API/Timing_element_visibility#result)
 -   [Lazy Load plus animation](https://codepen.io/rpsthecoder/pen/pByZjR)
 -   [Auto-pausing video](https://codepen.io/rpsthecoder/pen/ZZLyaG)
 -   [Content viewed](https://codepen.io/rpsthecoder/pen/QPdgzL)
 
-When it comes to User interaction, regardless of the technologies you are using and the problem you're trying to solve, _Intersection Observer_ may be the way to go. Therefore, I believe it's worth your while understanding the tools that modern browsers are building for us to come up with creative ways of delivering great User experience.
+## Conclusion
+
+When it comes to User interaction, regardless of the technologies you are using and the problem you're trying to solve, given its versatility _Intersection Observer_ may be the way to go. I believe it's worth your while understanding the tools that modern browsers are building for us to come up with creative ways of delivering great User experience because trust is good, but observation is better. 
+
+For more detailed information please review the W3C Specifications: [Intersection Observer - Editor's Draft, 15 June 2022](https://w3c.github.io/IntersectionObserver/)
